@@ -7,11 +7,11 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-@RequestMapping("/games")
+@RequestMapping("/schedule")
 public class GameController {
 
     @PostMapping(consumes = MediaType.APPLICATION_JSON_VALUE)
     public void createSchedule(@RequestBody CreateScheduleRequest createScheduleRequest) {
-        System.out.println("Will create schedule for team " + createScheduleRequest.getTeam1());
+        System.out.println("Will create schedule for championship " + createScheduleRequest.getChampId());
     }
 }
