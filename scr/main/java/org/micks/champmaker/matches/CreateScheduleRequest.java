@@ -19,15 +19,7 @@ public class CreateScheduleRequest {
         return champId;
     }
 
-    public void setChampId(Long champId) {
-        this.champId = champId;
-    }
-
     public List<Object> getTestList() {
         return testList;
-    }
-
-    public void setTestList(List<Object> testList) {
-        this.testList = testList;
     }
 }
